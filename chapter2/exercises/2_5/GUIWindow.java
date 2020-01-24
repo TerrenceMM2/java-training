@@ -1,0 +1,30 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class GUIWindow {
+
+    public static void main(String[] args) {
+        JFrame theGUI = new JFrame();
+        theGUI.setTitle("Second GUI Program");
+        theGUI.setSize(800, 600);
+        theGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JPanel northPanel = new JPanel();
+        northPanel.setBackground(Color.red);
+        JPanel eastPanel = new JPanel();
+        eastPanel.setBackground(Color.blue);
+        JPanel southPanel = new JPanel();
+        southPanel.setBackground(Color.red);
+        JPanel westPanel = new JPanel();
+        westPanel.setBackground(Color.blue);
+        JPanel centerPanel = new JPanel();
+        centerPanel.setBackground(Color.white);
+        Container pane = theGUI.getContentPane();
+        pane.add(northPanel, BorderLayout.NORTH);
+        pane.add(eastPanel, BorderLayout.EAST);
+        pane.add(southPanel, BorderLayout.SOUTH);
+        pane.add(westPanel, BorderLayout.WEST);
+        pane.add(centerPanel, BorderLayout.CENTER);
+        theGUI.setVisible(true);
+    }
+
+}
