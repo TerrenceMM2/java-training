@@ -19,7 +19,7 @@ public class Image2 {
             p.setGreen(average);
             p.setBlue(average);
         }
-        image.save();
+        image.saveAs();
         System.out.print("Image converted and saved.");
         System.exit(0);
     }
