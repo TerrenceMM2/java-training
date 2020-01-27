@@ -2,7 +2,7 @@ import images.APImage;
 import images.Pixel;
 import java.util.Scanner;
 
-public class Sharpen {
+public class Blur {
 
     public static void main(String[] args) {
         Scanner intReader = new Scanner(System.in);
