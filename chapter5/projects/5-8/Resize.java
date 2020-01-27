@@ -14,7 +14,7 @@ public class Resize {
 
         int width = image.getWidth();
         int height = image.getHeight();
-        APImage theSketch = new APImage(width, height);
+        APImage theSketch = new APImage((width / factor), (height / factor));
 
         for (int y = 1; y < height; y++) {
             if (y % factor == 0) {
@@ -35,9 +35,9 @@ public class Resize {
             }
         }
         theSketch.draw();
-        // theSketch.saveAs();
-        // System.out.print("Image converted and saved.");
-        // System.exit(0);
+        theSketch.saveAs();
+        System.out.print("Image converted and saved.");
+        System.exit(0);
     }
 
 }
