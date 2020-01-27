@@ -18,7 +18,6 @@ public class Posterize {
         int color5 = gen.nextInt(256);
         int color6 = gen.nextInt(256);
 
-
         for (Pixel p : image) {
             int red = p.getRed();
             int green = p.getGreen();
