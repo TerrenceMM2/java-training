@@ -18,6 +18,7 @@ public class Sound {
                 newValue = s.MIN_VALUE;
                 s.setValue(newValue);
             }
+            s.setValue(newValue);
         }
         clip.draw();
         clip.play();
